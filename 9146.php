@@ -3,28 +3,8 @@ session_start();
 header('Access-Control-Allow-Origin: *');
 ini_set('error_reporting', E_WARNING);
 ini_set('display_errors', 'on');
-xmklsjiejofreogdklk;l.;kefos
-/* ปรับปรุง 3 กันยายน 2564
-ข้อมูลเกี่ยวกับ source code
-1. ไม่พบ icon ด้านซ้าย ที่เรียกใช้จาก adminlte.io เนื่องจากปัญหา CORS 
-กรณีใช้กับ localhost แต่ถ้าใช้กับ server จะไม่พบปัญหาเช่น http://www.thaiall.com/adminlte/
-แก้ไขโดยติดตั้ง Extension : Allow CORS: Access-Control-Allow-Origin (Add to chrome)
-เพื่อเปิดการอนุญาตให้ทำ CORS (Cross Origin Resource Sharing) ผ่าน chrome ได้
-https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en
-2. หน้า Template : /project ตามลิงค์ด้านซ้าย ที่ใช้ในโปรแกรมนี้ พบหน้าตัวอย่างที่ http://www.thaiall.com/php/adminlte357.png
-3. เริ่มต้นใช้งานให้คลิ๊ก create table ที่กลางจอภาพ
-4. ตรวจสอบ html ,css และ php
-[pass] ตรวจ html code ที่ https://validator.w3.org/#validate_by_input
-[pass] ตรวจ css code ที่ https://jigsaw.w3.org/css-validator/validator
-[pass] ตรวจ php code ที่ https://phpcodechecker.com/
-5. ผลการตรวจสอบ css พบ 11 errors
-แต่เกิด error ที่มาจากแฟ้มภายนอก ส่วนในแฟ้มนี้ไม่พบ error
-6. เผยแพร่ใน http://www.thaiall.com/source
-7. การสร้างตารางทำผ่านตัวแปร $create_sql กำหนดชื่อตารางว่า test
-8. ตัวอย่างที่ http://www.thaiall.com/perlphpasp/source.pl?key=9144 - mysql_update357.php (ก่อนปรับ)
-9. ตัวอย่างที่ http://www.thaiall.com/perlphpasp/source.pl?key=9146 - adminlte357.php (หลังปรับ)
-10. เพิ่มการเรียกใช้ font ChulabhornLikit จาก lazywasabi.net ร่วมกับ Kanit ของ googleapis.com
-ซึ่งใน CDN ของ lazywasabi.net มีบริการอีกหลายฟอนต์ เช่น Anakotmai, Anuphan, Droid Sans Thai, Kinnari, Loma, Noto Sans Thai, Sarabun, Umpush
+
+/* 
 ***
 คำถามให้ฝึกปฏิบัติ
 1. เปลี่ยนชื่อตาราง
