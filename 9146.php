@@ -3,6 +3,7 @@ session_start();
 header('Access-Control-Allow-Origin: *');
 ini_set('error_reporting', E_WARNING);
 ini_set('display_errors', 'on');
+asdfgjkkokl
 /* ปรับปรุง 3 กันยายน 2564
 ข้อมูลเกี่ยวกับ source code
 1. ไม่พบ icon ด้านซ้าย ที่เรียกใช้จาก adminlte.io เนื่องจากปัญหา CORS 
