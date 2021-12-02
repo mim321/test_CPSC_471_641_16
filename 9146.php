@@ -3,9 +3,30 @@ session_start();
 header('Access-Control-Allow-Origin: *');
 ini_set('error_reporting', E_WARNING);
 ini_set('display_errors', 'on');
+<<<<<<< HEAD
 asdfgjkkokl
-/* ปรับปรุง 3 กันยายน 2564
+/* ปรับปรุง 3 กันยายน 2564 555
 ข้อมูลเกี่ยวกับ source code
+=======
+
+/* 
+***
+คำถามให้ฝึกปฏิบัติ
+1. เปลี่ยนชื่อตาราง
+2. เปลี่ยนชื่อฐานข้อมูล
+3. คัดลอก code แล้วสร้าง page ที่มีหลายตาราง และเชื่อมโยงกันไปมา 3 page
+4. เพิ่มฟอนต์ 
+5. เพิ่มเขตข้อมูล
+6. แยกเป็น select, insert, delete, update อย่างละหน้า
+7. จัดทำรายงานที่ select 2 ตาราง เชื่อมตาราง สั่งซื้อละเอียด กับ สินค้า
+เช่น select `order details`.*, products.* from (`order details` inner join products on `order details`.productid = products.productid)
+8. จัดทำรายงานที่ select 3 ตาราง เชื่อมตาราง สั่งซื้อ สั่งซื้อละเอียด กับ สินค้า
+เช่น select orders.customerid, `order details`.*, products.*
+  from (orders inner join `order details` on orders.orderid = `order details`.orderid
+  inner join products on `order details`.productid = products.productid)
+  where `order details`.unitprice > 100
+9. จัดทำรายงานที่ select 2 ตาราง และใช้ aggregate function คือ sum กับ group by  
+>>>>>>> 85d4643e5ad92cf46a5002f53fafdf5b2e5c5493
 เช่น select orderid, sum(quantity * unitprice) as total from `order details` group by orderid having sum(quantity * unitprice) > 1000  
 มีตัวอย่าง ที https://github.com/thaiall/programming-page/blob/master/php/northwind.php  
 */
